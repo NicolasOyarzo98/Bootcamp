@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Formulario</title>
+</head>
+<body>
+    
+    <form action="redireccion.html" method="get">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre"> <br>
+        <label for="direccion">Dirección</label>
+        <input type="text" name="direccion" id="direccion"> <br>
+        
+        <label for="listacolor">COLOR FAVORITO</label>
+        <input type="text" name="lista" list="colores">
+        <datalist id="colores" >
+            <option value="Rojo">Rojo</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+        </datalist>
+        <!--Buena práctica es que value sea igual al texto desplegado ya sea entre los corchetes > < o a través de label,
+        de este modo el usuario no ve dos veces el valor en la lista-->
+        <label for="animales">ANIMALES FAVORITOS</label>
+            <select name="animales" id="animales">
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Conejo">Conejo</option>
+            </select>
+        <button>ENVIAR</button>
+    </form>
+
+</body>
+</html>
